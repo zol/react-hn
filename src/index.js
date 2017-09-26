@@ -1,6 +1,6 @@
 require('setimmediate')
 
-var chromatic = require('react-chromatic');
+require('./chromatic');
 
 var React = require('react')
 var {render} = require('react-dom')
@@ -11,11 +11,5 @@ var applyRouterMiddleware = require('react-router/lib/applyRouterMiddleware')
 var history = createHashHistory()
 
 var routes = require('./routes')
-
-chromatic({
-  appCode: 's684zqqn8f',
-  // This regexp stops us from including `.test.js` files
-  componentContext: require.context('.', true, /\/[^\.]*\.js$/)
-});
 
 render(<Router history={history} render={applyRouterMiddleware(useScroll())} routes={routes}/>, document.getElementById('app'))
