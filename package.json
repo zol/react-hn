@@ -19,7 +19,7 @@
     "copy-manifest": "cp public/manifest.json dist/manifest.json",
     "generate-sw": "node generate-sw.js",
     "clean": "rm -rf *.json.gzip dist/index.html",
-    "chromatic": "chromatic test -- --appCode 's684zqqn8f'"
+    "chromatic": "chromatic test -- --app-code 's684zqqn8f'"
   },
   "engines": {
     "node": "6.1.0"
@@ -40,7 +40,7 @@
     "nwb": "0.12.2",
     "object-assign": "^4.1.0",
     "react": "15.3.2",
-    "react-chromatic": "^0.5.4",
+    "react-chromatic": "^0.5.5",
     "react-dom": "15.3.2",
     "react-router": "2.8.1",
     "react-router-scroll": "^0.3.2",
